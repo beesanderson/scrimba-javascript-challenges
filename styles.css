@@ -49,8 +49,10 @@ html, body {
   left: 0;
   bottom: 0;
   right: 0;
-  background: black;
+  /* background: black; */
+  background: rgba(0, 0, 0, .3);
 }
+/* you just change opacity of parent element, in this case #overlay */
 
 
 
