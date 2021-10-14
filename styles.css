@@ -5,16 +5,28 @@ html, body {
   text-align: center;
 }
 
-
-
-
 /** 
-  Our buttons '#open-modal, #close-modal' 
+  Modal: #modal
 
-  1) For the background colour use 'royalblue'
-  2) Be aware of the colour, padding & font size
-  3) Make sure the cursor has a pointer so that it demonstrates to the user the button is clickable
+  1) Add a temporary background colour of 'orange'
+  2) Add a padding of 20px
+  3) Add a height of 200px
+  4) Add a margin of 0 & auto to make sure our Modal is centered
+   5) Add a max-width of 600px
 **/
+
+/* Modal Styling */
+#modal {
+  background: orange;
+  padding: 20px;
+  height: 200px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+
+
+
 
 /* Buttons */
 
