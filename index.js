@@ -14,18 +14,23 @@
   2) Add an event listener of "click"
   3) Use document.getElementById to target "overlay" and change the style.display to "none"
 **/
-const openBtn = document.getElementById("open-modal")
-const closeBtn = document.getElementById("close-modal")
-const overlay = document.getElementById("overlay")
 
 
-openBtn.addEventListener("click", function() {
-    overlay.createElement 
-})
+// Open Modal------ 
 
-closeBtn.addEventListener("click", function() {
-    console.log("warning will robinson")
-})
+document.getElementById("open-modal").addEventListener("click", function() {
+    document.getElementById("overlay").style.display = "block";
+});
+
+
+// Close Modal------
+
+document.getElementById("close-modal").addEventListener("click", function() {
+    document.getElementById("overlay").style.display = "none";
+});
+
+
+
 
 
 
