@@ -1,8 +1,22 @@
+// TASK THREE:
+//     Grabbing all carousel items and attaching button event listeners
+
+const slides = document.getElementsByClassName("carousel-item");
+let slidePosition = 0;
+const totalSlides = slides.length;
 
 
+document.getElementById("carousel-button-next").addEventListener('click', moveToNextSlide);
+document.getElementById("carousel-button-prev").addEventListener('click', moveToPrevSlide);
 
 
+function moveToNextSlide() {
+    
+}
 
+function moveToPrevSlide() {
+
+}
 
 /* TASK THREE:
     Grabbing all carousel items and attaching button event listeners
