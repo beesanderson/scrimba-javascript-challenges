@@ -1,4 +1,11 @@
-# Scrimba JavaScript Challenges: 
+# 😃 Scrimba JavaScript Challenges: 
+
+Welcome to my Scrimba "Code-Along" JavaScript Challenges Page! I created this repository to help my future self with reusable **code blocks** which I see as basically code snippets so I can use them as templates in the future for my own personal projects! You'll see a lot of my notes and even more of my errors throughout this repository. I still class myself as a "beginner" though I am gaining more and more confidence as time goes on! 
+
+
+Happy Coding! 😃😃😃😃😃😃😃
+
+
 
 ## Challenge Code Blocks: 
 
@@ -21,49 +28,6 @@ document.getElementById("close-modal").addEventListener("click", function() {
 
 ```
 
-#### styles.CSS =>
-
-```
-html, body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-#modal {
-  background: white;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  height: 200px;
-  position: relative;
-  top: 30%;
-}
-
-#overlay {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  /* background: black; */
-  background: rgba(0, 0, 0, .3);
-}
-
-#open-modal,
-#close-modal {
-  background: royalblue;
-  cursor: pointer;
-  padding: 15px;
-  font-size: 25px;
-  color: white;
-}
-
-```
-
 
 ### Building a searchbar:  
 #### index.JS =>
@@ -83,6 +47,57 @@ document.getElementById("searchInput").addEventListener("keyup", function(event)
 });
 
 ```
+
+
+### Carousel Challenge:
+#### index.JS =>
+
+```
+const slides = document.getElementsByClassName("carousel-item");
+let slidePosition = 0;
+const totalSlides = slides.length;
+
+
+document.getElementById("carousel-button-next").addEventListener('click', moveToNextSlide);
+document.getElementById("carousel-button-prev").addEventListener('click', moveToPrevSlide);
+
+function hideAllSlides() {
+    for (let slide of slides) {
+        slide.classList.remove("carousel-item-visible");
+        slide.classList.add("carousel-item-hidden");
+    }
+    
+}
+
+
+function moveToNextSlide() {
+    hideAllSlides()
+
+    if (slidePosition === totalSlides - 1) {
+        slidePosition = 0;
+    } else {
+        slidePosition++
+    }
+    
+    slides[slidePosition].classList.add("carousel-item-visible");
+}
+
+function moveToPrevSlide() {
+    hideAllSlides();
+
+    if (slidePosition === 0) {
+        slidePosition = totalSlides - 1; 
+    } else {
+        slidePosition--;
+    }
+
+    slides[slidePosition].classList.add("carousel-item-visible");
+}
+
+```
+
+
+
 
 
 # EXTRA Code Block Examples: 
