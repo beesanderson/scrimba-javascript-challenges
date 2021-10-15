@@ -21,7 +21,6 @@ document.getElementById("close-modal").addEventListener("click", function() {
 
 ```
 
-### Building a Modal: 
 #### styles.CSS =>
 
 ```
