@@ -1,4 +1,4 @@
-# �Scrimba JavaScript Challenges: 
+# Scrimba JavaScript Challenges: 
 
 Welcome to my Scrimba "Code-Along" JavaScript Challenges Page! I created this repository to help my future self with reusable **code blocks** which I see as basically code snippets so I can use them as templates in the future for my own personal projects! You'll see a lot of my notes and even more of my errors throughout this repository. I still class myself as a "beginner" though I am gaining more and more confidence as time goes on! 
 
@@ -97,8 +97,9 @@ function moveToPrevSlide() {
 ```
 
 ## My Finished Carousel Project: 
-[carousel-snippet.mov.zip](https://github.com/beesanderson/scrimba-javascript-challenges/files/7356101/carousel-snippet.mov.zip)
+https://user-images.githubusercontent.com/87204074/137555960-c4704bb2-2d65-41d8-9015-9ce8f5bd515d.mov
 
+[carousel-snippet.mov.zip](https://github.com/beesanderson/scrimba-javascript-challenges/files/7356101/carousel-snippet.mov.zip)
 
 
 
