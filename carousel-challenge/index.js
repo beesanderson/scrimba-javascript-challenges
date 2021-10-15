@@ -1,6 +1,3 @@
-// TASK SIX: 
-// Moving to the previous slide
-
 const slides = document.getElementsByClassName("carousel-item");
 let slidePosition = 0;
 const totalSlides = slides.length;
@@ -27,11 +24,19 @@ function moveToNextSlide() {
         slidePosition++
     }
     
-    slides[slidePosition].classList.add("carousel-item-visible")
+    slides[slidePosition].classList.add("carousel-item-visible");
 }
 
 function moveToPrevSlide() {
+    hideAllSlides();
 
+    if (slidePosition === 0) {
+        slidePosition = totalSlides - 1; 
+    } else {
+        slidePosition--;
+    }
+
+    slides[slidePosition].classList.add("carousel-item-visible");
 }
 
 
