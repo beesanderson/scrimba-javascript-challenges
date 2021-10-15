@@ -24,7 +24,7 @@ body {
 
 .carousel {
     max-width: 600px;
-    position: absolute;
+    position: relative;
 }
 
 .carousel-item {
@@ -39,7 +39,7 @@ body {
 }
 
 .carousel-actions {
-    position: relative;
+    position: absolute;
 }
 
 #carousel-button-prev {
