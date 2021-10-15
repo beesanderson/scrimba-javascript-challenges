@@ -72,7 +72,7 @@ html, body {
 document.getElementById("searchInput").addEventListener("keyup", function(event) {
     let searchQuery = event.target.value.toLowerCase();
     let allNamesDOMCollection = document.getElementsByClassName("name")
-    for (let counter = 0; counter < allNamesDOMCollection.length; counter++) { //oh I realize what I did I think I still had i++ instead of counter++ out of habit oops haha
+    for (let counter = 0; counter < allNamesDOMCollection.length; counter++) {
         const currentName = allNamesDOMCollection[counter].textContent.toLowerCase()
         if (currentName.includes(searchQuery)) {
             allNamesDOMCollection[counter].textContent.style.display = "block";
