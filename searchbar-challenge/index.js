@@ -8,9 +8,9 @@
 document.getElementById("searchInput").addEventListener("keyup", function(event) {
     let searchQuery = event.target.value.toLowerCase();
     let allNamesDOMCollection = document.getElementsByClassName("name")
-    for (let counter = 0; counter < allNamesDOMCollection.length; i++) {
-        const currentName = allNamesDOMCollection[counter].textContent.toLowerCase()
-        console.log(currentName)
+    for (let i = 0; i < allNamesDOMCollection.length; i++) {
+        const currentName = allNamesDOMCollection[i].textContent.toLowerCase()
+        console.log(currentName) //Well I did this one on my own BUT don't know where to declare counter. I originally had it take the place of i but that threw an error so who knows will update with instructor formatting
     }
 });
 
