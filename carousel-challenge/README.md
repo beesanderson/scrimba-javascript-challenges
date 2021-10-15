@@ -112,7 +112,7 @@ for (let i = 0; i < people.length; i++) {
 
 #### How to Access an Object with **For Of** Loop:
 ```
-got (const person of people) {
+for (const person of people) {
     console.log(person.name);
     console.log(person.location)
 }
