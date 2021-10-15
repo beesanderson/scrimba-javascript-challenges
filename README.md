@@ -84,6 +84,9 @@ document.getElementById("searchInput").addEventListener("keyup", function(event)
 
 ```
 
+
+# EXTRA Code Block Examples: 
+
 ### Simple Event Listener Example: 
 ```
 document.getElementById("usernameInput").addEventListener("keyup", function(event) {
@@ -92,3 +95,50 @@ document.getElementById("usernameInput").addEventListener("keyup", function(even
 })
 
 ```
+
+
+
+## "For/Of" Loop 
+### -- **Syntactic Sugar** -- 
+##### Cleaner Code 
+
+## Example of "For/Of" Loop
+
+#### Standard FOR Loop Example: 
+```
+const names = ['Karl', 'John', 'Steve'];
+const people = [{ name: 'Karl', location: 'UK' }, { name: 'Steve', location: 'US' }];
+
+// looping using 'for' loop
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+```
+#### FOR OF Loop Example: 
+``` 
+// looping using 'for of' loop
+for (let name of names) {
+    console.log(name);
+}
+```
+- You can also use const instead of let as we don't expect it to be mutating in any way.
+
+#### How to Access an Object with Standard FOR Loop: 
+```
+// looping through an array of objects using 'for' loop
+for (let i = 0; i < people.length; i++) {
+    console.log(people[i].name);
+    console.log(people[i].location);
+}
+
+```
+
+#### How to Access an Object with FOR OF Loop:
+```
+for (const person of people) {
+    console.log(person.name);
+    console.log(person.location)
+}
+
+```
+- You are basically saying we know you have an array and for each iteration we are just going to store what ever you call this particular variable (in this case person) then access the name in this case. 

@@ -67,8 +67,6 @@ Grabbing all carousel items and attaching button event listeners
 
 ### TASK FOUR: 
 #### Move to Next Slide 
-
-    Moving to the next slide!
     
 1. Check if (slidePosition === totalSlides -1) (yes minus 1 because we start from 0 on 'slidePosition' - so if the slide is the last one (after a user has clicked through all the slides and then hits next again) we must reset the 'slidePosition' to 0, in turn taking them back to the first slide! 
 - Info) Why reset? well, if we try access 'slides[slidePosition]' as such 'slides[3]' or 'slides[4]' or 'slides[5]', these don't exist (we have 3 carousel items), so we will get an error! We have [slide0, slide1, slide2] <- remember our const 'slides'? That is has an array structure in that the items index start from 0! In a none programming world, we start from 1 when counting, but this is programming, so we start counting from 0 😄
@@ -78,10 +76,13 @@ Grabbing all carousel items and attaching button event listeners
 5. Test out your next button by clicking on it, you'll see there's some clean up to do in the next Scrimba cast!
 
 
-# "For/Of" Loop -- **Syntactic Sugar** -- Much Cleaner Code
+# "For/Of" Loop 
+### -- **Syntactic Sugar** -- 
+##### Cleaner Code 
+
 ## Example of "For/Of" Loop
 
-#### Standard **For** Loop Example: 
+#### Standard FOR Loop Example: 
 ```
 const names = ['Karl', 'John', 'Steve'];
 const people = [{ name: 'Karl', location: 'UK' }, { name: 'Steve', location: 'US' }];
@@ -91,7 +92,7 @@ for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
 ```
-#### **For Of** Loop Example: 
+#### FOR OF Loop Example: 
 ``` 
 // looping using 'for of' loop
 for (let name of names) {
@@ -100,7 +101,7 @@ for (let name of names) {
 ```
 - You can also use const instead of let as we don't expect it to be mutating in any way.
 
-#### How to Access an Object with Standard **For** Loop: 
+#### How to Access an Object with Standard FOR Loop: 
 ```
 // looping through an array of objects using 'for' loop
 for (let i = 0; i < people.length; i++) {
@@ -110,7 +111,7 @@ for (let i = 0; i < people.length; i++) {
 
 ```
 
-#### How to Access an Object with **For Of** Loop:
+#### How to Access an Object with FOR OF Loop:
 ```
 for (const person of people) {
     console.log(person.name);
