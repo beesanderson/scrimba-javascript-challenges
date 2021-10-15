@@ -14,9 +14,9 @@ document.getElementById("searchInput").addEventListener("keyup", function(event)
     for (let counter = 0; counter < allNamesDOMCollection.length; counter++) { //oh I realize what I did I think I still had i++ instead of counter++ out of habit oops haha
         const currentName = allNamesDOMCollection[counter].textContent.toLowerCase()
         if (currentName.includes(searchQuery)) {
-            allNamesDOMCollection[counter].textContent.style.display = "block";
+            allNamesDOMCollection[counter].style.display = "block"; //I should NOT have included .textContent on this as its already doing that in original declaration
         } else {
-            allNamesDOMCollection[counter].textContent.style.display = "none";
+            allNamesDOMCollection[counter].style.display = "none"; //I should NOT have included .textContent on this as its already doing that in original declaration
         }
     }
 });
