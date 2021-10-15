@@ -2,9 +2,11 @@
     Smooth transitions
     - When a new slide appears that has the class name 'carousel-item-visible' we want to trigger an animation... */
 
+
 .carousel {
     max-width: 600px;
     position: relative;
+    margin: 0 auto;
 }
 
 .carousel .carousel-item,
@@ -14,6 +16,7 @@
 
 .carousel .carousel-item-visible {
     display: block;
+    animation: fadeVisibility 0.5s;
 }
 
 .carousel .carousel-item img {
@@ -50,28 +53,16 @@
     margin-right: 20px;
 }
 
-/* #carousel-button-prev {
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50%;
-    background: rgb(57, 172, 57, .5);
-    border: none;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-}
+/* CSS KeyFrames */
 
-#carousel-button-next {
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50%;
-    background: rgb(57, 172, 57, .5);
-    border: none;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
- */
 
 /* TASK TWO:
     Styling the Carousel
