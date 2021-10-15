@@ -111,6 +111,10 @@ Grabbing all carousel items and attaching button event listeners
 More info: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
 
 
+# Project Complete: 
+## Recommended Features ---
+![Carousel Features](/carousel-challenge/images/carousel-features.png)
+
 
 
 
