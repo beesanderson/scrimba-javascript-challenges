@@ -1,8 +1,11 @@
-/* TASK ONE:
-    Task: Add an event listener for 'keyup'
-    1. Capture the event in a 'let' called 'searchQuery' - storing the value
-    2. Make sure the captured value is lowercase
-    3. Log to the console to demonstrate it works
+/* TASK FOUR: 
+    Task: Comparing the search query vs. the DOM names
+    1. Create a conditional that checks if currentName is equal to the user's search query!
+    2. If our conditional returns true, set the display style on 'allNamesDOMCollection[counter]' to be a block element
+    3. If our conditional falls into the else, we have no match! So set the display style to 'none'
+    
+    Helpers: use the methods 'includes' for objective 1
+    - The includes() method determines whether one string may be found within another string, returning true or false as appropriate.
 */
 
 document.getElementById("searchInput").addEventListener("keyup", function(event) {
@@ -10,11 +13,22 @@ document.getElementById("searchInput").addEventListener("keyup", function(event)
     let allNamesDOMCollection = document.getElementsByClassName("name")
     for (let counter = 0; counter < allNamesDOMCollection.length; counter++) { //oh I realize what I did I think I still had i++ instead of counter++ out of habit oops haha
         const currentName = allNamesDOMCollection[counter].textContent.toLowerCase()
-        console.log(currentName) 
+        if (currentName.includes(searchQuery)) {
+            allNamesDOMCollection[counter].textContent.style.display = "block";
+        } else {
+            allNamesDOMCollection[counter].textContent.style.display = "none";
+        }
     }
 });
 
 
+
+/* TASK ONE:
+    Task: Add an event listener for 'keyup'
+    1. Capture the event in a 'let' called 'searchQuery' - storing the value
+    2. Make sure the captured value is lowercase
+    3. Log to the console to demonstrate it works
+*/
 
 /* TASK TWO:
     Task: Get all the name elements from the DOM
@@ -33,4 +47,14 @@ document.getElementById("searchInput").addEventListener("keyup", function(event)
     3. Declare a const called 'currentName' and store the textContext
     4. Make sure the 'currentName' is lowercase
     5. Log out the 'currentName' so we can see all the names from the loop!
+*/
+
+/* TASK FOUR: 
+    Task: Comparing the search query vs. the DOM names
+    1. Create a conditional that checks if currentName is equal to the user's search query!
+    2. If our conditional returns true, set the display style on 'allNamesDOMCollection[counter]' to be a block element
+    3. If our conditional falls into the else, we have no match! So set the display style to 'none'
+    
+    Helpers: use the methods 'includes' for objective 1
+    - The includes() method determines whether one string may be found within another string, returning true or false as appropriate.
 */
