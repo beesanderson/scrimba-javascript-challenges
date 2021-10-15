@@ -1,4 +1,73 @@
-/*
+.carousel {
+    max-width: 600px;
+    position: relative;
+}
+
+.carousel .carousel-item {
+    display: none;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%; 
+}
+
+.carousel .carousel-actions button {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    background: rgb(57, 172, 57, .5);
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;
+}
+
+/* #carousel-button-prev {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    background: rgb(57, 172, 57, .5);
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+#carousel-button-next {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    background: rgb(57, 172, 57, .5);
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+ */
+
+/* TASK TWO:
     Styling the Carousel
 
     1) Set a max-width of 600px & position relative on the div 'carousel'
@@ -16,46 +85,3 @@
     8) Space those buttons from the left & right - we want to make sure they're not touching 
     the edges of the slides, but adequately spaced
 */
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.carousel {
-    max-width: 600px;
-    position: relative;
-}
-
-.carousel-item {
-    display: none;
-    width: 100%;
-}
-
-.carousel-item-visible {
-    display: inline-block;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.carousel-actions {
-    position: absolute;
-}
-
-#carousel-button-prev {
-    padding: 15px 45px;
-    font-size: 35px;
-    border-radius: 50%;
-    background: rgb(102, 255, 102, .5);
-    border: none;
-    cursor: pointer;
-}
-
-#carousel-button-next {
-    padding: 15px 45px;
-    font-size: 35px;
-    border-radius: 50%;
-    background: rgb(102, 255, 102, .5);
-    border: none;
-    cursor: pointer;
-}
